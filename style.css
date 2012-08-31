@@ -1,0 +1,99 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+
+/* */
+ul.airport-panel {
+  background: #444;
+  padding: 2px;
+}
+
+ul.airport-panel li {
+  list-style: none;
+  display: inline-block;
+  /*margin: 0 5px;*/
+}
+
+ul.airport-panel a {
+  color: #fff;
+  text-transform: capitalize;
+  text-decoration: none;
+  font-weight: 100;
+}
+
+ul.airport-panel span {
+  display: inline-block;
+  width: 16px;
+  text-align: center;
+  padding: 5px 0;
+  box-shadow: 0 0 1px #fff;
+  border-radius: 2px;
+  font: 12px "Helvetica", Arial, sans-serif;
+  font-weight: normal;
+  text-shadow: 1px 1px 2px #333;
+  font-weight: 100;
+
+  background-image: linear-gradient(bottom, rgb(56,56,56) 50%, rgb(56,56,56) 44%, rgb(148,148,148) 48%);
+  background-image: -o-linear-gradient(bottom, rgb(56,56,56) 50%, rgb(56,56,56) 44%, rgb(148,148,148) 48%);
+  background-image: -moz-linear-gradient(bottom, rgb(56,56,56) 50%, rgb(56,56,56) 44%, rgb(148,148,148) 48%);
+  background-image: -webkit-linear-gradient(bottom, rgb(56,56,56) 50%, rgb(56,56,56) 44%, rgb(148,148,148) 48%);
+  background-image: -ms-linear-gradient(bottom, rgb(56,56,56) 50%, rgb(56,56,56) 44%, rgb(148,148,148) 48%);
+
+  background-image: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    color-stop(0.5, rgb(56,56,56)),
+    color-stop(0.44, rgb(56,56,56)),
+    color-stop(0.48, rgb(148,148,148))
+  );
+}
+
+ul.airport-panel a:hover span {
+  -webkit-transform-style: preserve-3d;
+  -webkit-transition: -webkit-transform 0.5s;
+  transform: rotateX(360deg);
+  -webkit-transform: rotateX(360deg); /* Safari and Chrome */
+  -moz-transform: rotateX(120deg); /* Firefox */
+}
